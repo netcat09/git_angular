@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Github Users</title>
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-animate.min.js"></script>
@@ -17,7 +18,9 @@
     <script src="services/api.js"></script>
     <script src="directives/users.js"></script>
 </head>
-<h1 style="margin: auto">All GitHub Users</h1>
+<md-toolbar>
+    <div class="md-toolbar-tools">All GitHub Users</div>
+</md-toolbar>
 <body ng-controller="getUsersInfo">
 
 <div class="container" ng-view></div>
