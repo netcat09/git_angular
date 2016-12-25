@@ -1,0 +1,7 @@
+<div ng-controller="getUsersInfo">
+    <div class="row" style="margin: 15px">
+        <users-item ng-repeat="user in users"></users-item>
+    </div>
+    <md-button class="md-raised" ng-click="pPage()">Previos</md-button>
+    <md-button class="md-raised" ng-click="nPage()" style="float:right">Next</md-button>
+</div>

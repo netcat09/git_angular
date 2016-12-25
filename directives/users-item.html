@@ -1,0 +1,24 @@
+<md-content class="sm-padding" style="display: inline-block; width: 400px;">
+<md-card md-theme="{{ 'default' }}">
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">{{ user.login }}</span>
+            <a class="md-subhead" href="{{ user.html_url }}">{{ user.html_url }}</a>
+            <span class="md-subhead" ng-show="{{ user.site_admin }}">Admin</span>
+        </md-card-title-text>
+        <md-card-title-media>
+            <div class="md-media-sm card-media">
+
+                    <img style="width: 60px; height: 60px" src="{{ user.avatar_url }}"/>
+
+            </div>
+        </md-card-title-media>
+
+    </md-card-title>
+
+    <md-card-actions layout="row" layout-align="end center">
+        <md-button href="#/user/{{ user.login }}">More Info</md-button>
+    </md-card-actions>
+</md-card>
+</md-content>
+

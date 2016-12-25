@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gitUsers">
+<head>
+    <meta charset="UTF-8">
+    <title>Github Users</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
+    <script src="controllers/getusers.js"></script>
+    <script src="controllers/getsingleuser.js"></script>
+    <script src="services/api.js"></script>
+    <script src="directives/users.js"></script>
+    <script src="modules/angular_material.js"></script>
+</head>
+<body ng-controller="getUsersInfo">
+
+<div class="container" ng-view></div>
+
+</body>
+</html>
